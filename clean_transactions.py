@@ -1,4 +1,4 @@
-"""Normalize transactions without inventing missing financial data or dropping rows."""
+"""Normalize transactions and remove rows with at least four missing fields."""
 
 from pathlib import Path
 import sys
@@ -18,6 +18,12 @@ def clean_transactions(data):
     for column in ['transactionId', 'type', 'fromAccount', 'toAccount', 'channel']:
         cleaned[column] = cleaned[column].str.upper()
 
+    blank = cleaned[required].eq('')
+    # A purchase/withdrawal needs no destination; a deposit needs no source.
+    blank.loc[cleaned['type'].isin(['PURCHASE', 'WITHDRAWAL']), 'toAccount'] = False
+    blank.loc[cleaned['type'].eq('DEPOSIT'), 'fromAccount'] = False
+    removed = blank.sum(axis=1).ge(4)
+
     issues = []
 
     def flag(mask, message):
@@ -25,6 +31,10 @@ def clean_transactions(data):
             issues.append({'sourceRow': index + 2,
                            'transactionId': cleaned.at[index, 'transactionId'],
                            'issue': message})
+
+    flag(removed, 'Removed row: at least four missing fields')
+    # Keep original indices so issue messages still reference source CSV rows.
+    cleaned = cleaned.loc[~removed].copy()
 
     for column in ['transactionId', 'timestamp', 'type', 'amount']:
         flag(cleaned[column].eq(''), f'Missing {column}; left blank')
@@ -71,6 +81,7 @@ def main():
     output = folder / 'transactions_cleaned.csv'
     cleaned.to_csv(output, index=False)
     print(f'Saved {len(cleaned)} transactions to: {output}')
+    print(f'Removed {len(data) - len(cleaned)} rows missing at least four fields.')
     if not issues.empty:
         print(f'Found {len(issues)} review issues:')
         print(issues.to_string(index=False))

@@ -13,6 +13,11 @@ def clean_accounts(data):
     if missing:
         raise ValueError(f"Missing required columns: {', '.join(missing)}")
 
+    # Both datasets have eight standard columns: remove rows missing four or more.
+    fields = required + ['customerName'] if 'customerName' in cleaned else required
+    blank = cleaned[fields].apply(lambda values: values.fillna('').str.strip().eq(''))
+    cleaned = cleaned.loc[blank.sum(axis=1) < 4].copy()
+
     for column in text_columns:
         cleaned[column] = cleaned[column].str.strip().str.upper()
 
@@ -41,6 +46,7 @@ def main():
     # Read as text to preserve identifiers, empty cells, and untouched values.
     data = pd.read_csv(source, dtype=str, keep_default_na=False)
     cleaned = clean_accounts(data)
+    print(f'Removed {len(data) - len(cleaned)} rows missing at least four fields.')
     cleaned.to_csv(output, index=False, float_format='%.2f', na_rep='')
     print(f'Cleaned accounts saved to: {output}')
 
