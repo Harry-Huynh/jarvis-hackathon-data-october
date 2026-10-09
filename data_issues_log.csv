@@ -1,0 +1,18 @@
+csvLine,transactionId,issue,action
+10,TX00008,"duplicate transactionId TX00008 (same details, later timestamp)","Left as is. First one wins, later ones rejected as DUPLICATE"
+53,TX00051,account ACC9999 not in account file,Left as is. Rule 1 rejects it
+65,TX00063,amount has a letter in it ('12.5O'),Changed to 12.50 (assumed letter O typed for zero). Confirm with business
+67,TX00065,amount is zero or negative (0.00),Left as is. Rule 2 rejects it
+77,TX00071,"duplicate transactionId TX00071 (different details, ID reused)","Left as is. First one wins, later ones rejected as DUPLICATE"
+83,TX00080,transfer from and to the same account,Left as is. Team decision needed
+97,TX00094,type in lowercase ('purchase'),Changed to uppercase
+104,TX00101,account ACC1099 not in account file,Left as is. Rule 1 rejects it
+131,TX00128,amount is zero or negative (-60.00),Left as is. Rule 2 rejects it
+137,TX00134,type REVERSAL not defined in the brief,Left as is. Team decision needed
+169,TX00166,account ACC2001 not in account file,Left as is. Rule 1 rejects it
+179,TX00176,required account field is blank,Left as is. Reject as invalid account
+192,TX00189,amount is zero or negative (-1500.00),Left as is. Rule 2 rejects it
+198,TX00195,amount has more than 2 decimals (15.005),"Left as is. Team decision: reject, or round to cents"
+204,TX00201,amount is zero or negative (0.00),Left as is. Rule 2 rejects it
+229,TX00204,"duplicate transactionId TX00204 (different details, ID reused)","Left as is. First one wins, later ones rejected as DUPLICATE"
+238,TX00214,"duplicate transactionId TX00214 (same details, later timestamp)","Left as is. First one wins, later ones rejected as DUPLICATE"
