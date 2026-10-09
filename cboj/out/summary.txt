@@ -1,0 +1,24 @@
+PROCESSING SUMMARY
+==================
+Transactions Processed: 240
+Approved: 215
+Rejected: 25
+Flagged For Review: 13
+
+Rejections by reason:
+  INVALID AMOUNT                 6
+  ACCOUNT NOT ACTIVE             5
+  DUPLICATE TRANSACTION ID       4
+  INVALID ACCOUNT                4
+  INSUFFICIENT FUNDS             4
+  UNSUPPORTED TRANSACTION TYPE   1
+  MISSING ACCOUNT                1
+
+Flags by reason (a transaction can have several):
+  HIGH VELOCITY                  5
+  LARGE AMOUNT                   4
+  DAILY LIMIT EXCEEDED           3
+  NEAR REPORTING THRESHOLD       1
+
+Approved deposits (money in):           $76,090.39
+Approved purchases/withdrawals (out):   $36,760.87

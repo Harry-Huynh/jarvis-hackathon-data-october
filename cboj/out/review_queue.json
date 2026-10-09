@@ -1,0 +1,940 @@
+[
+  {
+    "transactionId": "TX00016",
+    "timestamp": "2026-10-15T07:08:00",
+    "type": "PURCHASE",
+    "fromAccount": "ACC1019",
+    "toAccount": null,
+    "amount": "14.36",
+    "channel": "POS",
+    "description": "Tim Hortons",
+    "flags": [
+      "HIGH VELOCITY"
+    ],
+    "flagDetails": [
+      "5 transactions on ACC1019 within 10 min"
+    ],
+    "balancesAfter": {
+      "ACC1019": "9346.28"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00010",
+        "time": "07:00:00",
+        "type": "PURCHASE",
+        "amount": "12.98",
+        "description": "Tim Hortons",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00012",
+        "time": "07:02:00",
+        "type": "PURCHASE",
+        "amount": "6.69",
+        "description": "Presto Reload",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00013",
+        "time": "07:04:00",
+        "type": "PURCHASE",
+        "amount": "3.70",
+        "description": "Tim Hortons",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00014",
+        "time": "07:06:00",
+        "type": "PURCHASE",
+        "amount": "13.54",
+        "description": "Presto Reload",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00016",
+        "time": "07:08:00",
+        "type": "PURCHASE",
+        "amount": "14.36",
+        "description": "Tim Hortons",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00034",
+        "time": "08:17:49",
+        "type": "DEPOSIT",
+        "amount": "882.69",
+        "description": "Mobile cheque deposit",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00099",
+        "time": "12:55:25",
+        "type": "TRANSFER",
+        "amount": "20.82",
+        "description": "Bill split",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00182",
+        "time": "18:30:00",
+        "type": "TRANSFER",
+        "amount": "344.31",
+        "description": "Bill split",
+        "status": "APPROVED",
+        "note": ""
+      }
+    ],
+    "review": {
+      "status": "CLEARED",
+      "analyst": "keerancheliyan",
+      "decidedAt": "2026-10-09T12:57:18",
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00069",
+    "timestamp": "2026-10-15T10:12:00",
+    "type": "WITHDRAWAL",
+    "fromAccount": "ACC1020",
+    "toAccount": null,
+    "amount": "12000.00",
+    "channel": "ATM",
+    "description": "Branch withdrawal",
+    "flags": [
+      "LARGE AMOUNT"
+    ],
+    "flagDetails": [
+      "12000.00 >= 10000.00 threshold"
+    ],
+    "balancesAfter": {
+      "ACC1020": "48000.00"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00069",
+        "time": "10:12:00",
+        "type": "WITHDRAWAL",
+        "amount": "12000.00",
+        "description": "Branch withdrawal",
+        "status": "APPROVED",
+        "note": "LARGE AMOUNT"
+      },
+      {
+        "transactionId": "TX00122",
+        "time": "14:00:00",
+        "type": "DEPOSIT",
+        "amount": "25000.00",
+        "description": "Incoming wire",
+        "status": "APPROVED",
+        "note": "LARGE AMOUNT"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00083",
+    "timestamp": "2026-10-15T11:20:00",
+    "type": "PURCHASE",
+    "fromAccount": "ACC1013",
+    "toAccount": null,
+    "amount": "11450.00",
+    "channel": "ONLINE",
+    "description": "Auto dealer - deposit on vehicle",
+    "flags": [
+      "LARGE AMOUNT"
+    ],
+    "flagDetails": [
+      "11450.00 >= 10000.00 threshold"
+    ],
+    "balancesAfter": {
+      "ACC1013": "6550.00"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00083",
+        "time": "11:20:00",
+        "type": "PURCHASE",
+        "amount": "11450.00",
+        "description": "Auto dealer - deposit on vehicle",
+        "status": "APPROVED",
+        "note": "LARGE AMOUNT"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00122",
+    "timestamp": "2026-10-15T14:00:00",
+    "type": "DEPOSIT",
+    "fromAccount": null,
+    "toAccount": "ACC1020",
+    "amount": "25000.00",
+    "channel": "PARTNER_FI",
+    "description": "Incoming wire",
+    "flags": [
+      "LARGE AMOUNT"
+    ],
+    "flagDetails": [
+      "25000.00 >= 10000.00 threshold"
+    ],
+    "balancesAfter": {
+      "ACC1020": "73000.00"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00069",
+        "time": "10:12:00",
+        "type": "WITHDRAWAL",
+        "amount": "12000.00",
+        "description": "Branch withdrawal",
+        "status": "APPROVED",
+        "note": "LARGE AMOUNT"
+      },
+      {
+        "transactionId": "TX00122",
+        "time": "14:00:00",
+        "type": "DEPOSIT",
+        "amount": "25000.00",
+        "description": "Incoming wire",
+        "status": "APPROVED",
+        "note": "LARGE AMOUNT"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00146",
+    "timestamp": "2026-10-15T15:30:00",
+    "type": "TRANSFER",
+    "fromAccount": "ACC1024",
+    "toAccount": "ACC1007",
+    "amount": "9999.99",
+    "channel": "ONLINE",
+    "description": "Transfer",
+    "flags": [
+      "NEAR REPORTING THRESHOLD"
+    ],
+    "flagDetails": [
+      "9999.99 is just under the 10000.00 reporting threshold (possible structuring)"
+    ],
+    "balancesAfter": {
+      "ACC1024": "5000.01",
+      "ACC1007": "23727.38"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00146",
+        "time": "15:30:00",
+        "type": "TRANSFER",
+        "amount": "9999.99",
+        "description": "Transfer",
+        "status": "APPROVED",
+        "note": "NEAR REPORTING THRESHOLD"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00154",
+    "timestamp": "2026-10-15T15:50:00",
+    "type": "PURCHASE",
+    "fromAccount": "ACC1008",
+    "toAccount": null,
+    "amount": "260.00",
+    "channel": "POS",
+    "description": "Petro-Canada",
+    "flags": [
+      "DAILY LIMIT EXCEEDED"
+    ],
+    "flagDetails": [
+      "ACC1008 outgoing today 1570.00 > daily limit 1500"
+    ],
+    "balancesAfter": {
+      "ACC1008": "7430.00"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00050",
+        "time": "09:05:00",
+        "type": "PURCHASE",
+        "amount": "420.00",
+        "description": "Loblaws",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00084",
+        "time": "11:40:00",
+        "type": "PURCHASE",
+        "amount": "380.00",
+        "description": "Costco",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00107",
+        "time": "13:15:00",
+        "type": "PURCHASE",
+        "amount": "510.00",
+        "description": "Best Buy",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00154",
+        "time": "15:50:00",
+        "type": "PURCHASE",
+        "amount": "260.00",
+        "description": "Petro-Canada",
+        "status": "APPROVED",
+        "note": "DAILY LIMIT EXCEEDED"
+      },
+      {
+        "transactionId": "TX00180",
+        "time": "18:25:00",
+        "type": "PURCHASE",
+        "amount": "95.00",
+        "description": "LCBO",
+        "status": "APPROVED",
+        "note": "DAILY LIMIT EXCEEDED"
+      },
+      {
+        "transactionId": "TX00198",
+        "time": "20:00:00",
+        "type": "WITHDRAWAL",
+        "amount": "200.00",
+        "description": "ATM withdrawal",
+        "status": "APPROVED",
+        "note": "DAILY LIMIT EXCEEDED"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00165",
+    "timestamp": "2026-10-15T16:30:00",
+    "type": "TRANSFER",
+    "fromAccount": "ACC1028",
+    "toAccount": "ACC1009",
+    "amount": "10000.00",
+    "channel": "ONLINE",
+    "description": "Transfer",
+    "flags": [
+      "LARGE AMOUNT"
+    ],
+    "flagDetails": [
+      "10000.00 >= 10000.00 threshold"
+    ],
+    "balancesAfter": {
+      "ACC1028": "12000.00",
+      "ACC1009": "18499.73"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00165",
+        "time": "16:30:00",
+        "type": "TRANSFER",
+        "amount": "10000.00",
+        "description": "Transfer",
+        "status": "APPROVED",
+        "note": "LARGE AMOUNT"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00180",
+    "timestamp": "2026-10-15T18:25:00",
+    "type": "PURCHASE",
+    "fromAccount": "ACC1008",
+    "toAccount": null,
+    "amount": "95.00",
+    "channel": "POS",
+    "description": "LCBO",
+    "flags": [
+      "DAILY LIMIT EXCEEDED"
+    ],
+    "flagDetails": [
+      "ACC1008 outgoing today 1665.00 > daily limit 1500"
+    ],
+    "balancesAfter": {
+      "ACC1008": "7335.00"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00050",
+        "time": "09:05:00",
+        "type": "PURCHASE",
+        "amount": "420.00",
+        "description": "Loblaws",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00084",
+        "time": "11:40:00",
+        "type": "PURCHASE",
+        "amount": "380.00",
+        "description": "Costco",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00107",
+        "time": "13:15:00",
+        "type": "PURCHASE",
+        "amount": "510.00",
+        "description": "Best Buy",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00154",
+        "time": "15:50:00",
+        "type": "PURCHASE",
+        "amount": "260.00",
+        "description": "Petro-Canada",
+        "status": "APPROVED",
+        "note": "DAILY LIMIT EXCEEDED"
+      },
+      {
+        "transactionId": "TX00180",
+        "time": "18:25:00",
+        "type": "PURCHASE",
+        "amount": "95.00",
+        "description": "LCBO",
+        "status": "APPROVED",
+        "note": "DAILY LIMIT EXCEEDED"
+      },
+      {
+        "transactionId": "TX00198",
+        "time": "20:00:00",
+        "type": "WITHDRAWAL",
+        "amount": "200.00",
+        "description": "ATM withdrawal",
+        "status": "APPROVED",
+        "note": "DAILY LIMIT EXCEEDED"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00198",
+    "timestamp": "2026-10-15T20:00:00",
+    "type": "WITHDRAWAL",
+    "fromAccount": "ACC1008",
+    "toAccount": null,
+    "amount": "200.00",
+    "channel": "ATM",
+    "description": "ATM withdrawal",
+    "flags": [
+      "DAILY LIMIT EXCEEDED"
+    ],
+    "flagDetails": [
+      "ACC1008 outgoing today 1865.00 > daily limit 1500"
+    ],
+    "balancesAfter": {
+      "ACC1008": "7135.00"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00050",
+        "time": "09:05:00",
+        "type": "PURCHASE",
+        "amount": "420.00",
+        "description": "Loblaws",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00084",
+        "time": "11:40:00",
+        "type": "PURCHASE",
+        "amount": "380.00",
+        "description": "Costco",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00107",
+        "time": "13:15:00",
+        "type": "PURCHASE",
+        "amount": "510.00",
+        "description": "Best Buy",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00154",
+        "time": "15:50:00",
+        "type": "PURCHASE",
+        "amount": "260.00",
+        "description": "Petro-Canada",
+        "status": "APPROVED",
+        "note": "DAILY LIMIT EXCEEDED"
+      },
+      {
+        "transactionId": "TX00180",
+        "time": "18:25:00",
+        "type": "PURCHASE",
+        "amount": "95.00",
+        "description": "LCBO",
+        "status": "APPROVED",
+        "note": "DAILY LIMIT EXCEEDED"
+      },
+      {
+        "transactionId": "TX00198",
+        "time": "20:00:00",
+        "type": "WITHDRAWAL",
+        "amount": "200.00",
+        "description": "ATM withdrawal",
+        "status": "APPROVED",
+        "note": "DAILY LIMIT EXCEEDED"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00219",
+    "timestamp": "2026-10-15T21:11:28",
+    "type": "PURCHASE",
+    "fromAccount": "ACC1017",
+    "toAccount": null,
+    "amount": "19.05",
+    "channel": "ONLINE",
+    "description": "Online gift card store",
+    "flags": [
+      "HIGH VELOCITY"
+    ],
+    "flagDetails": [
+      "5 transactions on ACC1017 within 10 min"
+    ],
+    "balancesAfter": {
+      "ACC1017": "4087.63"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00215",
+        "time": "21:10:00",
+        "type": "PURCHASE",
+        "amount": "25.72",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00216",
+        "time": "21:10:22",
+        "type": "PURCHASE",
+        "amount": "33.14",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00217",
+        "time": "21:10:44",
+        "type": "PURCHASE",
+        "amount": "25.44",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00218",
+        "time": "21:11:06",
+        "type": "PURCHASE",
+        "amount": "9.02",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00219",
+        "time": "21:11:28",
+        "type": "PURCHASE",
+        "amount": "19.05",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00220",
+        "time": "21:11:50",
+        "type": "PURCHASE",
+        "amount": "9.60",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00221",
+        "time": "21:12:12",
+        "type": "PURCHASE",
+        "amount": "37.80",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00222",
+        "time": "21:12:34",
+        "type": "PURCHASE",
+        "amount": "36.24",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      }
+    ],
+    "review": {
+      "status": "ESCALATED",
+      "analyst": "keerancheliyan",
+      "decidedAt": "2026-10-09T12:57:10",
+      "note": "Too many transactions within a certain period"
+    }
+  },
+  {
+    "transactionId": "TX00220",
+    "timestamp": "2026-10-15T21:11:50",
+    "type": "PURCHASE",
+    "fromAccount": "ACC1017",
+    "toAccount": null,
+    "amount": "9.60",
+    "channel": "ONLINE",
+    "description": "Online gift card store",
+    "flags": [
+      "HIGH VELOCITY"
+    ],
+    "flagDetails": [
+      "6 transactions on ACC1017 within 10 min"
+    ],
+    "balancesAfter": {
+      "ACC1017": "4078.03"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00215",
+        "time": "21:10:00",
+        "type": "PURCHASE",
+        "amount": "25.72",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00216",
+        "time": "21:10:22",
+        "type": "PURCHASE",
+        "amount": "33.14",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00217",
+        "time": "21:10:44",
+        "type": "PURCHASE",
+        "amount": "25.44",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00218",
+        "time": "21:11:06",
+        "type": "PURCHASE",
+        "amount": "9.02",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00219",
+        "time": "21:11:28",
+        "type": "PURCHASE",
+        "amount": "19.05",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00220",
+        "time": "21:11:50",
+        "type": "PURCHASE",
+        "amount": "9.60",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00221",
+        "time": "21:12:12",
+        "type": "PURCHASE",
+        "amount": "37.80",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00222",
+        "time": "21:12:34",
+        "type": "PURCHASE",
+        "amount": "36.24",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00221",
+    "timestamp": "2026-10-15T21:12:12",
+    "type": "PURCHASE",
+    "fromAccount": "ACC1017",
+    "toAccount": null,
+    "amount": "37.80",
+    "channel": "ONLINE",
+    "description": "Online gift card store",
+    "flags": [
+      "HIGH VELOCITY"
+    ],
+    "flagDetails": [
+      "7 transactions on ACC1017 within 10 min"
+    ],
+    "balancesAfter": {
+      "ACC1017": "4040.23"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00215",
+        "time": "21:10:00",
+        "type": "PURCHASE",
+        "amount": "25.72",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00216",
+        "time": "21:10:22",
+        "type": "PURCHASE",
+        "amount": "33.14",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00217",
+        "time": "21:10:44",
+        "type": "PURCHASE",
+        "amount": "25.44",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00218",
+        "time": "21:11:06",
+        "type": "PURCHASE",
+        "amount": "9.02",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00219",
+        "time": "21:11:28",
+        "type": "PURCHASE",
+        "amount": "19.05",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00220",
+        "time": "21:11:50",
+        "type": "PURCHASE",
+        "amount": "9.60",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00221",
+        "time": "21:12:12",
+        "type": "PURCHASE",
+        "amount": "37.80",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00222",
+        "time": "21:12:34",
+        "type": "PURCHASE",
+        "amount": "36.24",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  },
+  {
+    "transactionId": "TX00222",
+    "timestamp": "2026-10-15T21:12:34",
+    "type": "PURCHASE",
+    "fromAccount": "ACC1017",
+    "toAccount": null,
+    "amount": "36.24",
+    "channel": "ONLINE",
+    "description": "Online gift card store",
+    "flags": [
+      "HIGH VELOCITY"
+    ],
+    "flagDetails": [
+      "8 transactions on ACC1017 within 10 min"
+    ],
+    "balancesAfter": {
+      "ACC1017": "4003.99"
+    },
+    "accountActivity": [
+      {
+        "transactionId": "TX00215",
+        "time": "21:10:00",
+        "type": "PURCHASE",
+        "amount": "25.72",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00216",
+        "time": "21:10:22",
+        "type": "PURCHASE",
+        "amount": "33.14",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00217",
+        "time": "21:10:44",
+        "type": "PURCHASE",
+        "amount": "25.44",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00218",
+        "time": "21:11:06",
+        "type": "PURCHASE",
+        "amount": "9.02",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": ""
+      },
+      {
+        "transactionId": "TX00219",
+        "time": "21:11:28",
+        "type": "PURCHASE",
+        "amount": "19.05",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00220",
+        "time": "21:11:50",
+        "type": "PURCHASE",
+        "amount": "9.60",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00221",
+        "time": "21:12:12",
+        "type": "PURCHASE",
+        "amount": "37.80",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      },
+      {
+        "transactionId": "TX00222",
+        "time": "21:12:34",
+        "type": "PURCHASE",
+        "amount": "36.24",
+        "description": "Online gift card store",
+        "status": "APPROVED",
+        "note": "HIGH VELOCITY"
+      }
+    ],
+    "review": {
+      "status": "PENDING",
+      "analyst": null,
+      "decidedAt": null,
+      "note": null
+    }
+  }
+]

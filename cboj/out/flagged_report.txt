@@ -1,0 +1,39 @@
+FLAGGED TRANSACTIONS - MANUAL REVIEW REPORT
+===========================================
+13 approved transaction(s) require review.
+
+Accounts with most flags:
+  ACC1017 Mei Brown            4 flag(s)
+  ACC1008 Lucas Côté           3 flag(s)
+  ACC1020 Daniel Martin        2 flag(s)
+  ACC1019 Zoe Singh            1 flag(s)
+  ACC1013 Sofia Fortin         1 flag(s)
+
+TX ID     TIME     ACCOUNT  TYPE            AMOUNT  REASONS
+-----------------------------------------------------------
+TX00016   07:08:00 ACC1019  PURCHASE         14.36  HIGH VELOCITY
+            - 5 transactions on ACC1019 within 10 min
+TX00069   10:12:00 ACC1020  WITHDRAWAL   12,000.00  LARGE AMOUNT
+            - 12000.00 >= 10000.00 threshold
+TX00083   11:20:00 ACC1013  PURCHASE     11,450.00  LARGE AMOUNT
+            - 11450.00 >= 10000.00 threshold
+TX00122   14:00:00 ACC1020  DEPOSIT      25,000.00  LARGE AMOUNT
+            - 25000.00 >= 10000.00 threshold
+TX00146   15:30:00 ACC1024  TRANSFER      9,999.99  NEAR REPORTING THRESHOLD
+            - 9999.99 is just under the 10000.00 reporting threshold (possible structuring)
+TX00154   15:50:00 ACC1008  PURCHASE        260.00  DAILY LIMIT EXCEEDED
+            - ACC1008 outgoing today 1570.00 > daily limit 1500
+TX00165   16:30:00 ACC1028  TRANSFER     10,000.00  LARGE AMOUNT
+            - 10000.00 >= 10000.00 threshold
+TX00180   18:25:00 ACC1008  PURCHASE         95.00  DAILY LIMIT EXCEEDED
+            - ACC1008 outgoing today 1665.00 > daily limit 1500
+TX00198   20:00:00 ACC1008  WITHDRAWAL      200.00  DAILY LIMIT EXCEEDED
+            - ACC1008 outgoing today 1865.00 > daily limit 1500
+TX00219   21:11:28 ACC1017  PURCHASE         19.05  HIGH VELOCITY
+            - 5 transactions on ACC1017 within 10 min
+TX00220   21:11:50 ACC1017  PURCHASE          9.60  HIGH VELOCITY
+            - 6 transactions on ACC1017 within 10 min
+TX00221   21:12:12 ACC1017  PURCHASE         37.80  HIGH VELOCITY
+            - 7 transactions on ACC1017 within 10 min
+TX00222   21:12:34 ACC1017  PURCHASE         36.24  HIGH VELOCITY
+            - 8 transactions on ACC1017 within 10 min

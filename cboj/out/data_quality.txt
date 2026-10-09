@@ -1,0 +1,12 @@
+DATA QUALITY REPORT
+===================
+
+Accounts file:
+  no issues
+
+Transactions file (cleaned automatically):
+  line 97 TX00094: type 'purchase' normalized to PURCHASE
+
+Transactions file (unrepairable - rejected):
+  line 65 TX00063: amount '12.5O' is not a valid currency value
+  line 198 TX00195: amount '15.005' is not a valid currency value
